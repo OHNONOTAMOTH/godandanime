@@ -1,5 +1,10 @@
 use reqwest;
 use scraper::{Html, Selector};
+use crate::stringinitials;
+
+pub fn getvinitials() -> String{
+    return stringinitials::parse(get());
+}
 
 pub fn get() -> String {
     let resp = reqwest::blocking::get("https://www.verseoftheday.com/").unwrap().text().unwrap();
