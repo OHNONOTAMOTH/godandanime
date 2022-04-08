@@ -1,5 +1,6 @@
 pub mod verse;
+pub mod stringinitials;
 
 fn main() {
-    println!("{:?}", verse::parseverse());
+    println!("{:?}", stringinitials::parse(verse::get()));
 }
