@@ -1,6 +1,7 @@
 pub mod verse;
 pub mod stringinitials;
+pub mod anime;
 
 fn main() {
-    println!("{:?}", stringinitials::parse(verse::get()));
+    println!("{:?}", verse::getvinitials());
 }
